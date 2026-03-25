@@ -17,7 +17,6 @@ import static com.codeborne.selenide.Selenide.$$;
 public class FormTest {
     @BeforeEach
     void setUp(){
-        Configuration.timeout = 15000;
         Selenide.open("http://localhost:9999");
     }
     private String generateDate(long addDays,String pattern){
